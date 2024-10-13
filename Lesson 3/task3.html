@@ -14,32 +14,31 @@
     </p>
     <div>
         <button id="btnToC">v gradusy celsie</button>
-        <button id="btnToF">v gradusi Farengeit</button>
+        <button id="btnToF">v gradusi Farengeit</button
     </div>
-    <div>
-        <b id="output"></b>
-    </div>
+        <div>
+            <b id="output"></b>
+        </div>
 
-    <script>
-        document.querySelector("#btnToC").onclick = function () {
-            let tempF = Number(document.querySelector("#temp").value);
-            let tempC = 5 / 9 * (tempF - 32)
-            showResult(tempC)
-        }
+        <script>
+            document.querySelector("#btnToC").onclick = function () {
+                let tempF = Number(document.querySelector("#temp").value);
+                let tempC = 5 / 9 * (tempF - 32)
+                showResult(tempC)
+            }
 
-        document.querySelector("#btnToF").onclick = function () {
-            let tempC = Number(document.querySelector("#temp").value);
-            let tempF = 9 / 5 * tempC + 32
-            showResult(tempF)
-        }
-        
-        function showResult(result)
-        {
-            let output = document.querySelector("#output")
-            output.innerHTML = result;
-        }
+            document.querySelector("#btnToF").onclick = function () {
+                let tempC = Number(document.querySelector("#temp").value);
+                let tempF = 9 / 5 * tempC + 32
+                showResult(tempF)
+            }
 
-    </script>
+            function showResult(result) {
+                let output = document.querySelector("#output")
+                output.innerHTML = result;
+            }
+
+        </script>
 </body>
 
 </html>
