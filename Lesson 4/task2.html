@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let initialValue = "abccba";
+        let value = initialValue.replace(/\s+/g, "").toLowerCase();
+        let len = value.length;
+
+
+        let ispalindrome;
+
+        for (let i = 0; i < len / 2; i++) {
+            if (value[i] !== value[len - 1 - i]) {
+                isPalindrom = false;
+                break;
+            }
+
+            isPalindrome = true;
+        }
+
+        if(isPalindrome) {
+            console.log("Znacenja " + initialValue + " e palindrome");
+        } else {
+            console.log("Znacenja " + initialValue + " Ne e palindrom");
+
+        }
+
+    </script>
+</body>
+
+</html>

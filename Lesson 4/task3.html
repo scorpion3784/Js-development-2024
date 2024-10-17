@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getValue(message) {
+            while (true) {
+                let value = prompt(message);
+                let isValid = !isNaN(value) && value !== "" && value !== null;
+                if (isValid) return Number(value);
+            }
+        }
+
+        let start = getValue("Vveditj pocatok diapozonu");
+        let end = getValue("Vveditj kinec diapozonu");
+
+        if (end < start) {
+            console.log("Kinec diapozonu ne moze buti bise za pocatok")
+        }
+        else {
+            let sum = 0
+            for (let i = start; i <= end; i++) {
+                sum = sum + i
+            }
+            console.log(`suma znacinj v diapozone vid ${start} do ${end} dorivnue ${sum}`);
+        }
+
+    </script>
+</body>
+
+</html>
