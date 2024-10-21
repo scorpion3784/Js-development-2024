@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getCircleArea(radious) {
+            return Math.PI * Math.pow(radius, 2);
+        }
+
+        function getCirclePerimeter(radius) {
+            return 2 * Math.PI * radius;
+        }
+
+        function getNumericValue(message) {
+            while (true) {
+                let value = prompt(message);
+                let isValid = !isNaN(value) && value !== "" && value !== null;
+                if (isValid) return Number(value);
+            }
+        }
+
+        let radius = getNumericValue("Vedite radius");
+        let area = getCircleArea(radius);
+        let perimeter = getCirclePerimeter(radius);
+
+
+        alert(area);
+        alert(perimeter);
+
+    </script>
+</body>
+
+</html>
