@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Opisanie funkcii:
+
+        function f(x) {
+
+            //Esli x<0;
+            if (x < 0) {
+                return 0
+            }
+
+            //Esli x >= 0;
+            else {
+                //Esli x<2;
+                if (x < 2) {
+                    return x * x
+                }
+
+                //Esli x >= 2
+                else {
+
+                    //Esli x < 5;
+                    if (x < 5) {
+                        return 6 - x
+                    }
+
+                    //Esli x >= 5;
+                    else {
+                        return 1
+                    }
+                }
+            }
+        } //Okoncanie opisanie Funkcii
+
+        document.write("<h4>Kusocno-gladkaja funkcija</h4>");
+
+        //dobavlenie grafika funkciii v dokument:
+        document.write('<img src="611064.jpg" width="900" height="500"><br>');
+
+        //Peremennaja dlja zapisi znacenija argumenta:
+        let z;
+
+        //Znacenie argumenta -  slucainoe cislo (ot -2 do 7);
+        z = 9 * Math.random() - 2;
+
+        document.write("Slucainie argument: <b>" + z + "</b><br>");
+
+        //Vizov funkcii;
+        document.write("Znacenie funkcii: <b>" + f(z) + "</b>");
+
+    </script>
+</body>
+
+</html>
