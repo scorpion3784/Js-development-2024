@@ -8,14 +8,8 @@
 
 
 
-# def hello(sss):
-#     print(sss)
-# hello("rrrrrrrrr")
 
-# def hello2(gree):
-#     print(gree)
-# hello2("dfhdhdhdgh")
-# hello2(123+45)
+
 
 # def AddIt(Valuel, Value2):
 #     print(Valuel, "+", Value2, "=",Valuel + Value2)
@@ -103,45 +97,45 @@
 
 
 
-print("l. Яичница")
-print("2. Блинчики с творогом")
-print("3. Бельгийские вафли")
-print("4. Овсяная каша")
-MainChoice = int (input ("Выберите блюдо на завтрак: ") )
-if (MainChoice == 2):
-   Meal = "блинчики с творогом"
-elif (MainChoice == 3):
-   Meal = "бельгийские вафли"
-if (MainChoice == 1):
-   print("l. Бутерброд с ветчиной")
-   print("2. Бутерброд с сыром")
-   print ("3. Бутерброд с рыбой")
-   print("4. Бутерброд с салом")
-   Bread = int(input("Bыбepитe бутерброд: "))
-   if (Bread == 1):
-      print("Bы выбрали яичницу и бутерброд с ветчиной.")
-   elif (Bread == 2) :
-      print("Bы выбрали яичницу и бутерброд с сыром.")
-   elif (Bread == 3) :
-      print("Bы выбрали яичницу и бутерброд с рыбой.")
-   elif (Bread == 4) :
-      print("Bы выбрали яичницу и бутерброд с салом.")
-   else:
-      print("Y нас есть яичница, но нет такого бутерброда.")
-elif (MainChoice == 2) or (MainChoice == 3):
-   print("l. Сироп")
-   print ( "2. Клубника")
-   print("3. Сахарная пудра")
-   Topping = int(input("Bыбepитe десерт:"))
-   if (Topping == 1) :
-      print ("Вы выбрали " + Meal + " с сиропом. ")
-   elif (Topping == 2):
-      print ("Вы выбрали " + Meal + " с клубникой. ")
-   elif (Topping == 3):
-      print ("Вы выбрали " + Meal + " с сахарной пудрой.")
-   else:
-      print ("У нас есть " + Meal + ", но нет такого десерта.")
-elif (MainChoice == 4):
-   print ("Вы выбрали овсяную кашу.")
-else:
-      print("Y нас нет этого блюда на завтрак!")      
+# print("l. Яичница")
+# print("2. Блинчики с творогом")
+# print("3. Бельгийские вафли")
+# print("4. Овсяная каша")
+# MainChoice = int (input ("Выберите блюдо на завтрак: ") )
+# if (MainChoice == 2):
+#    Meal = "блинчики с творогом"
+# elif (MainChoice == 3):
+#    Meal = "бельгийские вафли"
+# if (MainChoice == 1):
+#    print("l. Бутерброд с ветчиной")
+#    print("2. Бутерброд с сыром")
+#    print ("3. Бутерброд с рыбой")
+#    print("4. Бутерброд с салом")
+#    Bread = int(input("Bыбepитe бутерброд: "))
+#    if (Bread == 1):
+#       print("Bы выбрали яичницу и бутерброд с ветчиной.")
+#    elif (Bread == 2) :
+#       print("Bы выбрали яичницу и бутерброд с сыром.")
+#    elif (Bread == 3) :
+#       print("Bы выбрали яичницу и бутерброд с рыбой.")
+#    elif (Bread == 4) :
+#       print("Bы выбрали яичницу и бутерброд с салом.")
+#    else:
+#       print("Y нас есть яичница, но нет такого бутерброда.")
+# elif (MainChoice == 2) or (MainChoice == 3):
+#    print("l. Сироп")
+#    print ( "2. Клубника")
+#    print("3. Сахарная пудра")
+#    Topping = int(input("Bыбepитe десерт:"))
+#    if (Topping == 1) :
+#       print ("Вы выбрали " + Meal + " с сиропом. ")
+#    elif (Topping == 2):
+#       print ("Вы выбрали " + Meal + " с клубникой. ")
+#    elif (Topping == 3):
+#       print ("Вы выбрали " + Meal + " с сахарной пудрой.")
+#    else:
+#       print ("У нас есть " + Meal + ", но нет такого десерта.")
+# elif (MainChoice == 4):
+#    print ("Вы выбрали овсяную кашу.")
+# else:
+#       print("Y нас нет этого блюда на завтрак!")      
