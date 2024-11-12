@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ function f(x){
+ 
+   var argType
+
+   argType=typeof(x)
+
+   switch(argType){
+
+      case "number":
+         document.write("×èñëîâîé àðãóìåíò<br>")
+         break
+
+      case "string":
+         document.write("Òåêñòîâûé àðãóìåíò<br>")
+         break
+  
+      default:
+         document.write("Íå òåêñò è íå ÷èñëî<br>")
+   }
+ }
+
+ f("òåêñò") // Ñ òåêñòîâûì àðãóìåíòîì
+
+ f(123)     // Ñ öåëî÷èñëåííûì àðãóìåíòîì
+ f(10.5)    // Àðãóìåíò - äåéñòâèòåëüíîå ÷èñëî
+ f(true)    // Ëîãè÷åñêèé àðãóìåíò
+ // Îáúÿâëåíèå ïåðåìåííîé (áåç ïðèñâàèâàíèÿ çíà÷åíèÿ):
+ var a
+ f(a)
+
+
+    </script>
+</body>
+</html>
