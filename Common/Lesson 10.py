@@ -233,13 +233,27 @@
 
 #("Formula for calculating  value of the investment (a), "+
 # use anual inerest (r), sum  of invest ($x), and for how many years (y).")
+
 # x = 1000
 # r = 5
-# y = 10
-# a = x *(1 + r/100)**y
-#print(a)
+# y = 12
+# a = x *(1 + r/100)**12
+# print(a)
 
 
+            #  calculate the income from a savings account #
+            
+# amount = 1000
+# interest_rate = 5
+# years = 1
+# income =(amount * interest_rate * years) / 100
+# print(income)
+
+
+
+
+               #  Convert 24 time hours to 12 time hours #
+       
 # def convert24(str1): 
     
 #     # Checking if last two elements of time 
@@ -352,3 +366,102 @@
 
 ########################################################################
 
+#   программа ниже считывает имя пользователя и выводит приветствие.
+
+# user_name = input();
+# print('Hello, ' + user_name);
+
+# age = input()
+# print('Your age is ' + age)
+
+# nick_name = input()
+# print("Welcome back " + nick_name + "!")
+
+# user_name = input('Please, enter your name: ')
+# print('Hello, ' + user_name)
+
+
+# print('Enter your name: ')
+# user_name = input()
+# print('Hello, ' + user_name)
+
+
+# print("Enter your age:")
+# age = input()
+# print("Your age is " + age)
+
+
+# dummy_variable = input("Enter some dummy value: ")
+# print("Warning: Oh, cmon, you are taking too long")
+
+
+# city = input("Insert the city you currently live in: ")
+# country = input("Insert the country you currently live in: ")
+# print("You live in " + city + ", " + country)
+# zip_code = input("Insert your ZIP code: ")
+
+# #  if you want inpur just number integer, code is below
+
+# zip_code = int(input("Insert your ZIP code: "))
+
+
+
+# user_name = input()
+# user_profession = input()
+# print("My name is " + user_name + " and I am a " + user_profession)
+
+
+# or ############
+
+# print("Hello " + user_name + "!" + " You are Great " + user_profession)
+
+####     This is same But Shorter and Better ##########
+
+# print(f"My name is {input()} and I am a {input()}")
+
+######################################################################################
+
+      #     преобразовать входные значения в целые числа.########
+                          
+# num_1 = int(input())
+# num_2 = int(input())
+# print(num_1 + num_2)
+
+
+
+# # the average amount of money per month
+# money = int(input("How much money do you spend per month: "))
+
+# # the number of miles per unit of money
+# n_miles = 2
+
+# # earned miles
+# miles_per_month = money * n_miles
+
+# # the distance between London and Paris
+# distance = 215
+
+# # how many months do you need to get
+# # a free trip from London to Paris and back
+# print(distance * 2 / miles_per_month )
+
+
+
+
+                         # Compound assignment operators  #
+                         
+# capital = int(input("Enter your capital: "))
+# capital = capital * 0.8
+# additional_income = 1000
+# capital = capital + additional_income
+# print(capital)
+
+
+ # can be shortened and become more readable #
+
+     
+# capital = int(input("Enter your capital: "))
+# capital *= 0.8
+# additional_income = 1000
+# capital += additional_income 
+# print(capital)      
