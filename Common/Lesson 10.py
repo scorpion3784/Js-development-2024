@@ -186,7 +186,7 @@
 # sum = 1500
 # spend = 600 + 300 + 200
 # result = (sum - spend)
-# print(result // 25)
+# print(result % 10)
 
 
 
@@ -465,3 +465,275 @@
 # additional_income = 1000
 # capital += additional_income 
 # print(capital)      
+
+
+    #  программу, которая вводит переменную nкак целое число и выводит результат выражения:  #
+    
+# n = int(input("Vedite znacenie - "))
+# result = ((n + 1) * n + 2) * n + 3
+# print(result)
+
+              #  perimetr прямоугольного параллелепипеда #
+            
+              
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# perimeter = 4 * (a + b + c)
+# print(perimeter)
+
+#############################################
+
+#  программа должна спросить пользователя о параметрах прямоугольного параллелепипеда (3 целых числа, представляющих длину, ширину и высоту) и вместо этого напечатать его поверхность.
+ 
+
+
+#####################################################
+
+                      #   Расчет объема #
+                      
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# print(a * b * c )
+# or
+# volume = a * b * c
+# input(volume)
+
+
+#   Мы можем преобразовать числовой ввод пользователя с помощью int(input())илиfloat(input())
+
+##########################################################
+
+
+
+                ####   Вызов функций   ###
+                
+                
+
+# number = "111"
+# # finding the length of an object
+# print(len(number))  # 3
+
+# # converting types
+# integer = int(number)  # 111
+# float_number = float(number)  # 111.0
+
+# # adding numbers
+# my_sum = sum((integer, float_number))
+
+# print(my_sum)  # 222.0
+# print(round(my_sum))  # 222
+
+
+# # finding the minimum and the maximum
+# integer = 3
+# float_number = 5.4
+# my_sum = sum((integer, float_number))
+
+# print(min(integer, float_number))  # 3
+# print(type(max(integer, float_number, my_sum)))  # <class 'float'>
+
+################################################################
+
+# num1 = int(input("Num1:"))
+# num2 = int(input("Num2:"))
+# def sum_numbers(a, b):
+#     return sum((a, b))
+# print("Result:", sum_numbers(num1,num2))
+
+##############################################################
+
+#  В Python мы обычно используем функции для выполнения блока повторно используемого кода. У вас есть простая функция для приветствия пользователя, имя которого указано в качестве аргумента. Ваша цель — вызвать функцию 'greet_user' с аргументом 'name', хранящим строку 'Bob', и присвоить ее возвращаемое значение переменной 'message'. Позже 'message' должно быть выведено. Можете ли вы заполнить пробелы в коде, чтобы выполнить эту задачу? #############
+
+# def greet_user(name):
+#     return("Hello, " + name + "!")
+# name =("Bob")
+# message = greet_user(name)
+# print(message)
+
+#######################################################
+
+     #   Напишите программу, которая берет строку и выводит ее длину. #
+     
+# string = input()
+# print(len(string))
+          # OR #
+# print(len(input()))
+########################################################
+
+    #  Find the longest word in a pair and print its length.#
+    
+# word1 = input()
+# word2 = input()
+# print(len(max(word1,word2)))
+#       # but this one was right #
+# print(max(len(word1), len(word2)))
+
+############################################################### 
+                       # Sum of Numbers  #
+                       
+                       
+# x = int(input())
+# y = int(input())
+# my_sum = sum((x, y))
+# print(my_sum)
+
+#  or with FUNCTION ################
+# def sum_numbers(a, b):
+#     return sum((a, b))
+# print("Result:", sum_numbers(x,y))
+
+############################################################
+
+   #  print(max("gloomy", "grey", "green"))
+   
+   #####################################################
+   
+   
+# jack_age = int(input())
+# alex_age = int(input())
+# lana_age = int(input())
+# print(min(jack_age, alex_age, lana_age))
+
+                # OR  #
+# min_age = min(jack_age, alex_age, lana_age)
+# print(min_age)
+
+
+##############################################################
+
+# a = int(input())
+# b = int(input())
+# def show_min(a, b):
+#     return min(a, b)
+# def show_max(a, b):
+#     return max(a, b)
+# print("Min:", show_min(5,10), "Max:", show_max(5,10))
+
+###############################################################
+#################################################
+
+ # программa, которая берет строку, записывает ее в переменную name , а затем печатает "Hello, world! Hello, name ". ####################
+ 
+#name = input()
+# print("Hello, world! Hello, " + name)
+
+#############################################################
+ #  программa, которая принимает в качестве входных данных одно целое число, представляющее возраст человека. Если возраст больше или равен 18, выведите True. В противном случае выведите False.  ############################## 
+ 
+# Age = int(input())
+# if(Age >= 18):
+#     print(True)
+# else:
+#     print(False)
+      #  OR this one shorter # 
+# print(int(input()) > 17)
+
+###########################################################
+
+  # Вычисление и отображение результата булевой операции ##
+     
+# x = True
+# y = False
+# z = x and y
+# result = "The result of 'True and False' is " + str(z)
+# print(result)
+
+############################################################
+
+
+# Предположим, что на улице идет дождь, и вы задаетесь вопросом, оставаться ли вам дома или нет. Ваше решение основано на том, есть ли у вас зонтик или нет. #####################################################
+
+# isRaining = True
+# haveUmbrella = False
+# shouldStayHome = isRaining and not  haveUmbrella
+# message = "Should I stay home? " + str(shouldStayHome)
+# print(message)
+
+###########################################################################
+ 
+ 
+# a = True
+# b = not a
+# if not (a and b):
+#     print('hey')  
+    
+# output:
+# hey
+ 
+ ##########################################################################
+ 
+# print(0.0 or False)  # False
+# print("True" and True)  # True
+# print("" or False)  # False 
+
+###########################################################################
+
+
+
+#  программa Python, которая принимает целое число в качестве входных данных. Если целое число делится на 2, выведите True; в противном случае выведите False.#########################################################
+
+# input_value = int(input())
+# if(input_value % 2 == 0):
+#     print(True)
+# else:
+#     print(False)
+            #  OR THIS SHORTER #
+            
+# input_value = int(input())
+# print(input_value % 2 == 0)
+
+######################################################################
+
+
+ 
+##################      Oператоры сравнения      ###########################
+
+
+
+
+                   ###  Цепочка сравнений ####
+
+# a = 1
+# b = 2
+# c = 3
+# e = 4
+# f = 5
+# g = 6
+
+# print(b + c <= e or f + g >= e == f == 5) # False, это выражение эквивалентно 
+#                                     # (f + g >= e) and (e == f) and (f == 5)
+                                    
+# print((b + c <= e or f + g >= e) == (f == 5))  # True
+
+
+############################################################################
+
+
+
+
+                      ### Логика и арифметика ###
+
+# a = 1
+# b = 2
+# c = 3
+# e = 4
+# f = 5
+# g = 6
+
+# # True and-expressions return the result of the last operation:
+# print(b + c * f >= e and (f + g) * c)  # (17 >= 4 is True) and 33 -> 33
+# print((f + g) * c and b + c * f >= e)  # 33 and (17 >= 4 is True) -- > True
+
+# # False and-expressions return a boolean False value:
+# print(b + c * f <= e and (f + g) * c)  # (17 <= 4 is False) and 33 --> False
+# print((f + g) * c and b + c * f <= e)  # 33 and (17 <= 4 is False) --> False
+
+# # True or-expressions return the result of the first operation:
+# print(b + c * f >= e or (f + g) * c)  # (17 >= 4 is True) or 33 --> True
+# print((f + g) * c or b + c * f >= e)  # 33 or (17 >= 4 is True) --> 33
+
+# # True-False or-expressions return the True part:
+# print((f + g) * c or b + c * f <= e)  # 33 or (17 <= 4 is False) --> 33
+# print(b + c * f <= e or (f + g) * c)  # (17 <= 4 is False) or 33 --> 33
