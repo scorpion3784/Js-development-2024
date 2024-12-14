@@ -38,7 +38,6 @@
 # print ( "Bы ввели: ", ANumber)
 
 
-
             #  if, if...else,  if...elif
 
 # TestMe = 6
@@ -138,4 +137,16 @@
 # elif (MainChoice == 4):
 #    print ("Вы выбрали овсяную кашу.")
 # else:
-#       print("Y нас нет этого блюда на завтрак!")      
+#       print("Y нас нет этого блюда на завтрак!")    
+
+
+
+# number of halls = int(input())
+# capacity = int(input())
+# viewers = int(input())
+# if(a * b >= c):
+#     print(True)
+# else:
+#     print(False)
+
+ 
