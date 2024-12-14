@@ -1908,6 +1908,9 @@
 
 #######################################################################
 ######################################################################
+###########################################################
+##################################################################
+##################################################################
 
 
         ### Давайте посчитаем общую прибыль за этот период! ###
@@ -1927,6 +1930,8 @@
 # print(f"earned_amount: ${total_earned:.2f}")
 # sum = sum + float(v[2:])
 
+########################################################
+###########################################
 
 # price = """Prices:
 # Bubblegum: $2
@@ -1963,6 +1968,33 @@
 ####################################################################
 ####################################################################
 
+Earned_amount ={
+    'Bubblegum': 202,
+    'Toffee': 118, 
+    'Ice cream': 2250,
+    'Milk chocolate': 1680,
+    'Doughnut': 1075,
+    'Pancake': 80,
+}
+print('Earned_amount: ')
+for item, price in Earned_amount.items():
+   print(f"{item}: ${price}")
+print(f"\nIncome: {sum(Earned_amount.values())}")
+ 
+
+staff = float(input("> "))
+print(f"Staff expenses: ${staff}")
+ 
+
+other_expenses = float(input("> "))
+print(f"Other expenses: ${other_expenses}")
+ 
+net_income = sum(Earned_amount.values()) - staff - other_expenses
+print('Net income: $',float(net_income), sep='')
+
+##############################################################
+############################################################
+
 # Earned_amount = {
 #     'Bubblegum': 202,
 #     'Toffee': 118, 
@@ -1998,7 +2030,10 @@
 
 
 ##################################################################
-#################################################################
+##################################################################
+#############################################################
+############################################################
+############################################################
 
             ###   Конвертер формата времени   ###
 
@@ -2267,47 +2302,5 @@
 
 
 
-# Earned_amount ={
-#     'Bubblegum': 202,
-#     'Toffee': 118, 
-#     'Ice cream': 2250,
-#     'Milk chocolate': 1680,
-#     'Doughnut': 1075,
-#     'Pancake': 80,
-# }
-# print('Earned_amount: ')
-# for item, price in Earned_amount.items():
-#    print(f"{item}: ${price}")
-# print(f"\nIncome: {sum(Earned_amount.values())}")
- 
-# staff = {
-#     'Cleaner': 850,
-#     'Vendor': 1120,
-#     'Manager': 1300,
-#     'Loader': 900,
-# }
-# print(f"Staff expenses: \n>${sum(staff.values())}")
- 
-# other_expenses = {
-#     'Electricity': 100,
-#     'Municipal Service': 90,
-#     'Security': 30,
-#     }
-# print(f"Other expenses: \n>${sum(other_expenses.values())}")
- 
-# net_income = sum(Earned_amount.values()) - sum(staff.values()) - sum(other_expenses.values())
-# print('Net income: $',float(net_income), sep='')
 
 
-########################################################################################
-####################################################################################
-
-
-# earned_amount = {
-# 'Bubblegum': 202,
-# 'Toffee': 118,
-# 'Ice cream': 2250,
-# 'Milk chocolate': 1680,
-# 'Doughnut': 1075,
-# 'Pancake': 80
-# }
