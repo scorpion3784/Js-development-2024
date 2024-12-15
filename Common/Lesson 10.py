@@ -1685,6 +1685,64 @@
 #     result = result * i
 # print(f"The factorial of ", n, " is : ", result)
 
+########################################
+
+
+  # from math import factorial 
+
+# from math import factorial
+# print(factorial(int(input())))
+
+
+
+######################################
+
+
+# Вычисление факториала с помощью циклов С помощью цикла while:
+
+# n = int(input())
+# factorial = 1
+# while n > 1:
+#     factorial *= n
+#     n -= 1
+# print(factorial)   
+
+
+
+# n = int (input ('Input a number between 1 and 100: '))
+# result = 1
+# while n > 0 and n < 100:
+#     result *= n
+#     n -= 1
+# print(result)
+
+###############
+
+# Вычисление факториала с помощью цикла for:
+
+# n = int(input())
+# factorial = 1
+# for i in range(2, n+1):
+#     factorial *= i
+# print(factorial)
+
+##################
+
+# Нахождение факториала рекурсией
+
+# def fac(n):
+#     if n == 1:
+#         return 1
+#     return fac(n - 1) * n
+# print(fac(5))
+
+
+
+
+
+
+
+
 ###########################################################################
 
 #####     Расчет размеров прямоугольника с помощью PEP 8     #####
@@ -1968,29 +2026,29 @@
 ####################################################################
 ####################################################################
 
-Earned_amount ={
-    'Bubblegum': 202,
-    'Toffee': 118, 
-    'Ice cream': 2250,
-    'Milk chocolate': 1680,
-    'Doughnut': 1075,
-    'Pancake': 80,
-}
-print('Earned_amount: ')
-for item, price in Earned_amount.items():
-   print(f"{item}: ${price}")
-print(f"\nIncome: {sum(Earned_amount.values())}")
+# Earned_amount ={
+#     'Bubblegum': 202,
+#     'Toffee': 118, 
+#     'Ice cream': 2250,
+#     'Milk chocolate': 1680,
+#     'Doughnut': 1075,
+#     'Pancake': 80,
+# }
+# print('Earned_amount: ')
+# for item, price in Earned_amount.items():
+#    print(f"{item}: ${price}")
+# print(f"\nIncome: {sum(Earned_amount.values())}")
  
 
-staff = float(input("> "))
-print(f"Staff expenses: ${staff}")
+# staff = float(input("> "))
+# print(f"Staff expenses: ${staff}")
  
 
-other_expenses = float(input("> "))
-print(f"Other expenses: ${other_expenses}")
+# other_expenses = float(input("> "))
+# print(f"Other expenses: ${other_expenses}")
  
-net_income = sum(Earned_amount.values()) - staff - other_expenses
-print('Net income: $',float(net_income), sep='')
+# net_income = sum(Earned_amount.values()) - staff - other_expenses
+# print('Net income: $',float(net_income), sep='')
 
 ##############################################################
 ############################################################
@@ -2299,6 +2357,142 @@ print('Net income: $',float(net_income), sep='')
 
 #####################################################################
 ######################################################################
+#####################################################################
+###############################################################
+###########################################################
+
+
+                      ###   While loop   #####
+                      ###   WHILE LOOP   #####
+
+
+# number = int(input())
+# while number < 5:
+#     print(number)
+#     number += 1
+# print('Now, the number is equal to 5')
+
+                      ################
+
+# S 0 do 10 == 0,1,2,3,4,5,6,7,8,9
+# i = 0
+# while i < 10:
+#     print(i)
+#     i += 1
+
+                      ####################
+
+# S 1 do 10 == 1,3,5,7,9
+# i = 1
+# while i < 10:
+#     print(i)
+#     i += 2
+
+                      #########################
+
+# Bezkonecnoe Ne chotnoe!!!
+# i = 1
+# while i > 0:
+#     if i % 2 == 1:
+#          print(i)
+#     i += 2
+
+                     ###########################
+# Nechego ne Vyvodit,poka ne izmenish parametr!
+# i = 0
+# while i != 10:
+#     if i % 2 != 0:
+#         print(i)
+#     i += 2    
+
+
+#############################################################
+##########################################################
+#####################################################################
+
+
+
+# Напишите программу, которая принимает число Nв качестве входных 
+# данных и печатает все положительные четные числа, меньшие этого 
+# входного числа. Пожалуйста, используйте для этого цикл while .
+
+#Все положительные четные числа, которые меньше N. Выведите их в 
+# порядке возрастания. Каждое число должно быть на отдельной строке. 
+
+
+
+
+# maxim = int(input())
+# counter = 0
+# while counter < maxim:
+#     if counter % 2 == 0:
+#         print(counter)
+#     counter += 2
+
+
+# computer_input, n = int(input()), 2
+# while n < computer_input:
+#     print(n)
+#     n += 2
+
+
+# numb = int(input())
+# x = 2
+# while x % 2 == 0 and x < numb:
+#     print(x)
+#     x += 2
+
+
+# n = int(input())
+# i = 0
+# while n <= 200 and n > i :
+#     i += 1
+#     if i % 2 == 0 and i < n :
+#         print(i)
+
+
+# N = int(input())
+# i = 0
+# while N <= 200 and i < N:
+#        print(i)
+#        i = i + 2
+
+
+################################################################
+################################################################
+################################################################
+
+
+
+
+### Создание функции для классификации чисел на четные и нечетные
+
+# counter = 1
+# while counter <= 10:
+#   if counter % 2 == 0:
+#         print(str(counter) + " is even")
+#   else:
+#         print(counter, " is odd")
+#   counter += 1
+
+
+
+##############################################################
+#############################################################
+
+
+
+# i = 0
+# while i <= 10:
+#   i += 1
+#   if i > 7:
+#     i += 2
+#   print(i)
+
+
+
+
+
 
 
 
