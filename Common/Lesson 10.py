@@ -2490,11 +2490,936 @@
 #   print(i)
 
 
+###############################################################
+###############################################################
+#################################################################
+
+
+# Карл просит вас посчитать сумму первых k натуральных чисел. 
+# Прочитайте k из входных данных, затем сложите числа от 1 до k 
+# и выведите свой ответ.
+
+# n = int(input())
+# sum = 0
+# while n > 0:
+#   sum = n * (n + 1) // 2
+#   if sum == sum:
+#     break
+# print(sum)
+
+
+# print(sum(range(int(input()) + 1)))
+
+
+# k = int(input())
+# total = 0
+
+# while k > 0:
+#     total += k
+#     k -= 1
+# print(total)
+
+
+################################################################
+###############################################################
+###############################################################
+
+
+  
+#  Сколько букв «а» будет напечатано после выполнения этого кода?  #
+
+                     # with WILE
+ 
+# i = 0
+# a = 'a'
+# while i < 8:
+#     a *= 2
+#     i += 1
+# print(len(a))
+
+                     # with FOR  
+
+# a = 'a'
+# for i in range(8):
+#     a *= 2
+# print(len(a))
+
+##############################################################
+############################################################
+
+
+               ###   бесконечный цикл в коде   ###
+
+   # Бесконечный цикл:
+
+# number = 5
+# while number > 0:
+#     print(number)
+#     number += 1  
+
+  # Бесконечный цикл:
+
+# number = 5
+# while True:
+#     print(number)
+#     number += 1  
+
+
+   # Up to 1000:
+
+# number = 5
+# while number*2 < 1000:
+#     print(number)
+#     number += 1
+
+  # Up to 100:
+
+# number = 5
+# while number % 100 != 0:
+#     print(number)
+#     number += 1    
+
+
+
+   #Бесконечность  цикл:
+
+# days_learning= 0
+# while True:
+#   days_learning +=1
+#   print("You're a student for life now you're learning since: " + str(days_learning) + " days")
+
+
+##########################################################
+#########################################################
+###############################################################
+############################################################
+##############################################################
+
+
+# В случае финансового кризиса банка правительство гарантирует возврат 
+# клиенту депозита, если он составляет менее 700 000 (денежных единиц). 
+# Банк предлагает годовую процентную ставку по депозитам в размере 7,1%.
+#  Проценты начисляются ежегодно, то есть добавляются к депозиту в конце
+#  каждого года, и новые проценты рассчитываются на основе этой 
+# увеличенной суммы.
+
+# Узнайте, сколько лет потребуется, чтобы заданный первоначальный взнос 
+# превысил защищенную государством сумму в 700 000.
+
+# Формат ввода:
+
+# Одно целое число, представляющее начальную сумму депозита. 
+# Входное значение гарантированно находится в диапазоне от 50 000 до 700 000 (включительно). Используйте input()функцию для считывания начальной суммы депозита от пользователя.
+
+# Формат вывода:
+
+# Целое число, представляющее количество лет, которое потребуется, 
+# чтобы депозит превысил 700 000.
+
+# Например, если введено 650000:
+
+# Через год депозит вырастет до 650000 * 1,071 = 696150.
+
+# Через два года это будет 696150 * 1,071 = 745576,65, что превышает 700 000.
+
+# Таким образом, потребуется 2 года, чтобы депозит превысил защищенную 
+# сумму.
+
+
+# deposit = int(input())
+# rate = 7.1
+# year = 0
+# while deposit <= 700000:
+#   value = deposit * rate / 100
+#   year += 1
+#   deposit += value
+# print(year)
+ 
+                 #########################
+
+# # Initial deposit
+# deposit = int(input())
+
+# # Interest rate
+# interest = 1.071
+
+# # Initialise number of years
+# years = 0
+
+# # Calculate new deposit after interest for each year
+# while deposit < 700000:
+#     deposit *= interest
+#     years += 1
+
+# # Print number of years it takes to exceed govt guarantee
+# print(years)
+
+                     ###############
+
+# years = 0
+# x = int(input())
+# while x < 700000:
+#     x += x * 0.071
+#     years += 1
+# print(years)
+
+######################################################################
+########################################################################
+#########################################################################
+# ####################################################################
+
+
+# n = int(input())
+# number = 0
+# while number < 12:
+#    print(number)
+#    number += 2
+
+
+######################################################################
+########################################################################
+######################################################################
+####################################################################
+
+
+
+
+      #######   Loop control: break, continue, pass    ########
+
+
+
+# pets = ['dog', 'cat', 'parrot']     
+# for pet in pets:
+#   print(pet)
+#   if pet == 'cat':
+#     break
+
+#####################################################
+
+# count = 0
+# while True:
+#     print("I am Infinite Loop")
+#     count += 1
+#     if count == 13:
+#         break
+  
+  ###########################################
+
+# numbers = [1, 2, 3]
+# for num in numbers:
+#     if num == 5:
+#         print("It's 5!")
+#         break
+# else:
+#     print('5 was not listed')
+# # 5 was not listed
+
+
+# numbers = [1, 2, 3, 4, 5, 6]
+# for num in numbers:
+#     if num == 5:
+#         print("It's 5!")
+#         break
+# else:
+#     print('5 was not listed')
+# # It's 5!
+
+###############################################
+
+# pets = ['dog', 'cat', 'parrot']
+# for pet in pets:
+#     if pet == 'dog':
+#         continue
+#         print(pet)
+
+# pets = ['dog', 'cat', 'parrot']
+# for pet in pets:
+#     if pet != 'dog':
+#         print(pet)
+
+############################################    
+
+# while True:
+#     pass  
+
+
+##############################################
+
+# my_list = 48,49,50,51,52,53,54,55,56
+# for el in my_list:
+#     if el >= 50:
+#       break
+#     else:
+#       print(el)
+
+
+
+# for i in range(1, 11):
+ 
+#     # If i is equals to 6,
+#     # continue to next iteration
+#     # without printing
+#     if i == 6:
+#         continue
+#     else:
+#         # otherwise print the value
+#         # of i
+#         print(i, end=" ")
+
+
+# prints the numbers between
+# 0 and 9 that are not equal to 5
+# i = 0
+# while i < 10:
+#     if i == 5:
+#         i += 1
+#         continue
+#     print(i)
+#     i += 1
+
+  
+
+# prints the numbers between
+# 0 and 9 that are not equal to 5
+# li =['a', 'b', 'c', 'd']
+ 
+# for i in li:
+#     if(i =='a'):
+#         pass
+#     else:
+#         print(i) 
+  
+
+####################################################################
+#######################################################################
+######################################################################
+
+# Прочитайте имена из ввода, каждое с новой строки, и остановитесь 
+# на одной точке, .которая обозначает конец последовательности.
+# Распечатайте список и его длину (количество гостей) для Джеймса.
+# Используйте list.append(new_element)метод для добавления новых элементов 
+# в список.
+
+
+# names = []
+# while True:
+#     name = input()
+#     if name == '.':
+#         break
+#     else:
+#         names.append(name)
+# print(names)
+# print(len(names))
+
+
+
+# guests = []
+# while True:
+#     guest = input()
+#     if guest == '.':
+#         break
+#     else:
+#         guests.append(guest)
+# print(guests)
+# print(len(guests))
+
+# OR
+
+# print(f'{guests}\n{len(guests)}')
 
 
 
 
 
+# guests = []
+# while True:
+#     user_input = input()
+#     if user_input == '.':
+#       break
+#     else:
+#       guests.append(user_input)    
+# print(guests)
+# print(len(guests))
 
+# names = list(iter(input, '.'))
+# print(names)
+# print(len(names))
+
+
+
+################################################################
+################################################################
+
+     ### Посчитайте до десяти: избегайте шоу с переполнением!
+
+#У вас есть программа, предназначенная для вывода счета до тех пор, 
+# пока он не достигнет 10. Заполните пробелы в коде, чтобы убедиться, 
+# что программа прекращает подсчет, как только достигнет 10, и правильно 
+# выходит из цикла, не выводя дополнительных чисел.
+
+
+# x = 0
+# while True:
+#     x += 1
+#     if x == 10:
+#       break
+#     print('Current count:', x)
+# print('Loop stopped at:', x)
+
+##################################################################
+##############################################################
+
+
+                    #####   Среднее   #####
+
+# Вычислите среднее арифметическое целых чисел и выведите его. 
+# Вы получите целые числа в отдельных строках. 
+# Числовая последовательность заканчивается точкой ., 
+# поэтому прекратите читать ввод на ней.
+
+
+
+# numbers = []
+# while True:
+#     user_input = input()
+#     if user_input == ".":
+#         break
+#     numbers.append(int(user_input))
+# print(sum(numbers) / len(numbers))
+
+
+# numbers = []
+# n = 0
+# while n != ".":
+#     numbers.append(int(n))
+#     n = input()
+# print(sum(numbers) / (len(numbers) - 1))
+
+
+# gauges = [int(x) for x in iter(input, '.')]
+# print(sum(gauges) / len(gauges))
+
+
+# numb = 0
+# count = 0
+# while True:
+#     num = input()
+#     if num == ".":
+#         break
+#     numb += int(num)
+#     count += 1
+# print(numb / count)
+
+
+
+#####################################################################
+########################################################################
+
+
+# for i in range(10):
+#     line = ""
+#     for j in range(10):
+#         if i == j:
+#             break
+#         line += "{} ".format(j)
+#     print(len(line))
+
+# 0 1 2
+# 0 1 2 3
+# 0 1 2 3 4
+# 0 1 2 3 4 5
+# 0 1 2 3 4 5 6
+# 0 1 2 3 4 5 6 7
+# 0 1 2 3 4 5 6 7 8    
+
+
+########################################################################
+###########################################################################
+
+
+#########################################################################
+#########################################################################
+##########################################################################
+
+        ###   Последовательность печати с изюминкой FizzBuzz   ###
+
+# Напишите программу на Python, которая получает на вход целое число n. 
+# Программа должна вывести все числа от 1 до n. Но если оно кратно 3, 
+# она должна вывести «Fizz», а если кратно 5, она должна вывести «Buzz». 
+# Если оно кратно 3 и 5, она выведет «FizzBuzz» и прервет цикл.
+
+
+# WHILE
+
+# n = 0
+# while True:
+#   n = int(input())
+#   #n = int(num)
+#   if n % 3 == 0 and n % 5 == 0:
+#     print("FizzBuzz")   
+#   elif n % 3 == 0:
+#     print("Fizz")
+#   elif n % 5 == 0:
+#     print("Buzz")
+
+
+# OR
+
+# def print_numbers(n):
+#     count_n = 1
+#     while count_n <= n:
+#         if count_n % 3 == 0 and count_n % 5 == 0:
+#             print('FizzBuzz')
+#         elif count_n % 3 == 0:
+#             print('Fizz')
+#         elif count_n % 5 == 0:
+#             print('Buzz')
+#         else:
+#             print(count_n)
+#         count_n += 1 
+
+# n = int(input())
+# print_numbers(n)
+
+
+
+# FOR
+
+# n = int(input("> "))
+# for i in range(1, n + 1):
+#   if i % 3 == 0 and i % 5 == 0:
+#     print("FizzBuzz")
+#     break   
+#   elif i % 3 == 0:
+#     print("Fizz")
+#   elif i % 5 == 0:
+#     print("Buzz")
+#   else:
+#     print(i)
+
+## FUNCTION
+
+# According to Python best practices, we should import all necessary 
+# libraries at the beginning of a program 
+
+# n = int(input("> "))
+# def numbers(n):
+#   for i in range(1, n + 1):
+#     if i % 3 == 0 and i % 5 == 0:
+#       print("FizzBuzz")
+#       break
+#     elif i % 3 == 0:
+#       print("Fizz")
+#     elif i % 5 == 0:
+#       print("Buzz")
+#     else:
+#       print(i)
+# numbers(n)
+
+
+# OR
+
+
+# def print_numbers(n):
+#     for num in range(1, n + 1):
+#         result = f'{"Fizz" * (num % 3 == 0)}{"Buzz" * (num % 5 == 0)}'
+#         print(result if result else num)
+#         if result == "FizzBuzz":
+#             break
+
+# print_numbers(int(input()))
+
+
+# OR
+
+# def print_numbers(n):
+#     for i in range(1, n + 1):
+#         string_ = ''
+#         if i % 3 and i % 5:
+#             string_ = str(i)
+#         if not i % 3:
+#             string_ += 'Fizz'
+#         if not i % 5:
+#             string_ += 'Buzz'
+#         print(string_)
+
+# n = int(input())
+# print_numbers(n)
+
+
+
+
+#####################################################################
+# ####################################################################
+# ###################################################################
+# ###################################################################
+# ###################################################################
+#   
+
+
+# for a in range(2, 10):
+#     if a % 2 == 0:
+#         print(a)
+# else:
+#     print("no more numbers")
+ 
+ 
+# for a in range(2, 10):
+#     if a % 2 == 0:
+#         print(a)
+# print("no more numbers")
+
+#####################################################################
+######################################################################
+##########################################################################
+
+  
+
+# an else clause; it is executed when the loop terminates through exhaustion 
+# of the iterable (with for) or when the condition becomes false (with while),
+#  but not when the loop is terminated by a break statemen
+
+# break           --              It may help to exit an infinite loop.   
+# continue        --             It skips the current iteration under some 
+#                                                  specified condition.
+# else after a for - loop After a certain number of iterations, 
+#                                  it runs an additional code.
+# else after a while loop - It executes some block of code 
+#                                          if the loop's condition is false.
+
+
+
+
+# for n in range(2, 10):
+#     for x in range(2, n):
+#         if n % x == 0:
+#             print(n, 'equals', x, '*', n//x)
+#             break
+#     else:
+#         # loop fell through without finding a factor
+#         print(n, 'is a prime number')
+ 
+# 2 is a prime number
+# 3 is a prime number
+# 4 equals 2 * 2
+# 5 is a prime number
+# 6 equals 2 * 3
+# 7 is a prime number
+# 8 equals 2 * 4
+# 9 equals 3 * 3
+
+
+######################################################################
+#####################################################################
+######################################################################
+
+
+# i = 10
+# while i > 0:
+#     i -= 2
+#     if i % 2 == 1:
+#         break
+#     else:
+#         i -= 2
+# else:
+#     print("End.")
+
+###################################################################
+# #################################################################
+# ################################################################
+    
+# Создайте пустой список.
+# Создайте бесконечное условие while.
+#      добавить входные данные
+#      создайте условие, которое проверяет, что точка находится в списке
+#      break 
+#      остановить бесконечное состояние
+# распечатать список
+# распечатать длину списка
+
+
+# guests = []
+# while True:
+#     guest = input()
+#     if guest == ".":
+#         break
+#     else:
+#         guests.append(guest)
+# print(guests)
+# print(len(guests))
+
+
+######################################################################
+
+########################################################################
+########################################################################
+
+                 # WORKING WHITH LIST
+
+# strings = ["8.9", "6.0", "8.1", "7.5"]
+# floats = [float(x) for x in strings]
+# print(floats)
+# print(strings)
+
+                # APPEND, EXTEND, REMOVE TO LIST []
+
+# numbers = [1, 2, 3, 4, 5]
+# numbers.extend([10, 20, 30])
+# print(numbers)  # [1, 2, 3, 4, 5, 10, 20, 30]
+
+
+
+# numbers = [1, 2, 3, 4, 5]
+# numbers.append([10, 20, 30])
+# print(numbers)  # [1, 2, 3, 4, 5, [10, 20, 30]]
+
+
+
+# list_one = ['Washington, D.C.', 'Chicago', 'New York']
+# list_two = ['Los Angeles', 'Las Vegas']
+# def merge_lists(list_one, list_two):
+#   list_one.extend(list_two)
+#   print(list_one)
+
+# merge_lists(list_one, list_two)
+
+
+####################################################################
+#################################################################
+
+
+    
+# Sum of natural numbers up to num
+
+# num = 5
+
+# if num < 0:
+#    print("Enter a positive number")
+# else:
+#    sum = 0
+#    # use while loop to iterate until zero
+#    while(num > 0):
+#        sum += num
+#        num -= 1
+#    print("The sum is", sum)
+
+
+###################################################################
+####################################################################
+###################################################################
+######################################################################
+#######################################################################
+
+
+                    ###   Game over   ###
+
+
+# Прочитайте строку с ответами пользователя из ввода : 
+# C для правильного ответа и I для неправильного, разделенные пробелом. 
+# Цель состоит в том, чтобы подсчитать окончательный счет, 
+# который является количеством правильных ответов. Считайте их, 
+# пока пользователь не достигнет 3 неправильных ответов . 
+# Если он сделает не более 2 ошибок, он победит. 
+# В этом случае выведите «You win» и его счет, 
+# в противном случае выведите « Game over» вместе с его счетом. 
+# Выведите сообщение и счет на отдельных строках, без кавычек.
+
+
+# scores = input().split()
+# correct = 0
+# wrong = 0
+# for i in scores:
+#     if i == 'C':
+#         correct += 1
+#     elif i == 'I':
+#         wrong += 1
+#         if wrong >= 3:
+#             print(f"Game over\n{correct}")
+#             break
+# else:
+#     print(f"You won\n{correct}")
+
+# OR
+
+# scores = input().split()
+# points = 0
+# lives = 3
+# for i in list(scores):
+#     if i == 'C':
+#         points += 1
+#     else:
+#         lives -= 1
+#         if lives <= 0:
+#             break
+    
+
+# print('You won' if lives > 0 else 'Game over')
+# print(points)
+
+# # OR 
+
+# scores = input().split()
+# score = 0
+# lives = 3
+# for char in scores:
+#     if char == "C":
+#         score += 1
+#     else:
+#         lives -= 1
+#         if lives == 0:
+#             print("Game over")
+#             break
+# if lives > 0:
+#     print("You won")
+# print(score)
+
+# # OR
+
+# scores = input().split()
+# def win_or_lose(results):
+#     incorrect = 0
+#     correct = 0
+
+#     for i in results:
+#         if incorrect == 3:
+#             return f'Game over\n{correct}'
+#         if i == 'C':
+#             correct += 1
+#         if i == 'I':
+#             incorrect += 1
+
+#     return f'You won\n{correct}'
+# print(win_or_lose(scores))
+
+
+# # OR
+
+# scores = input().split()
+# points = 0
+# lives = 3
+
+# for score in scores:
+#     if lives == 0:
+#         break
+#     if score == "C":
+#         points += 1
+#     else:
+#         lives -= 1
+
+# print("Game over" if lives == 0 else "You won")
+# print(points)
+
+
+#############################################################
+#############################################################
+#############################################################
+#############################################################
+###########################################################
+
+
+
+# x = 0
+# while True:
+#     x += 1
+#     if x == 10:
+#       break
+#     print('Current count:', x)
+# print('Loop stopped at:', x)
+
+
+
+# counter = 0
+# max_value = 0
+# while counter < 10:
+#     counter = counter + 1
+#     max_value = max_value + counter
+#     if max_value >= 15:
+#         break
+#     counter = counter + 1
+# print(counter)
+
+##################################################################
+###################################################################
+##################################################################
+
+#Напишите программу, которая считывает целые числа с консоли, 
+# по одному числу в строке.
+# Для каждого введенного числа необходимо проверить:
+# если число меньше 10 , то пропустить это число;
+# если число больше 100 , то прекратить чтение чисел с консоли;
+# в других случаях выведите это число обратно на консоль в отдельной 
+# строке.
+
+
+
+# while True:
+#   n = int(input())
+#   if n < 10:
+#     continue
+#   elif n > 100:
+#     break
+#   else:
+#     print(n)
+
+# OR
+
+# num = int(input())
+# while num <= 100:
+#     if num >= 10:
+#         print(num)
+#     num = int(input())
+
+# OR
+
+# list_number = []
+# while True:
+#     number = int(input())
+#     if number < 10:
+#         continue
+#     elif number > 100:
+#         break
+#     else:
+#         list_number.append(number)
+# for i in list_number:
+#     print(i)
+
+
+#####################################################################
+#####################################################################
+######################################################################
+# Напишите программу, которая считывает целые числа (по одному в строке)
+#  с консоли до тех пор, пока их сумма не станет равна 0. После этого 
+# программа должна вывести на экран сумму квадратов всех введенных чисел.
+# Если первое целое число равно 0, просто выведите 0 вместо суммы квадратов.
+# Вам нужно вывести сумму квадратов только один раз .
+
+
+# summ = 0
+# while True:
+#   n = int(input())
+#   summ += n ** 2
+#   if n != 0:
+#     continue
+#   elif n == 0:
+#     print(summ)
+#     break
+  
+
+# summ = 0
+# summq = 0
+# i = 1
+# while i != 0:
+#         i = int(input())
+#         summ += i
+#         summq = summq + i**2
+#         if summ == 0:
+#             break
+# print (summq)
+  
+
+
+##############################################################
+############################################################
+##############################################################
 
 

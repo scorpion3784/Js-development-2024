@@ -60,4 +60,36 @@
 #    Y=1
 
 
-print(mi_to_km(mi, km))
+#print(mi_to_km(mi, km))
+
+
+
+
+
+scores = input()
+correct = 0
+wrong = 0
+for i in scores:
+    if i == 'C':
+        correct += 1
+    elif i == 'I':
+        wrong += 1
+        if wrong >= 3:
+            print(f"Game over\n {len({correct})}")
+            break
+else:
+    print(f"You won\n {len(correct)}") 
+
+# print("Игра: Вставь пропущенную букву")
+# print("Вставьте пропущенные буквы в следующее слово:")
+# print("С_рен_венький")
+# x = input("Первая буква:")
+# if x == "i":
+#     print("Отлично, продолжаем!")
+# else:
+#     print("GAME OVER")
+# y = input("Вторая буква:")
+# if y == "e":
+#     print("Прекрасно, вы справились!!!")
+# else:
+#     print("GAME OVER")
