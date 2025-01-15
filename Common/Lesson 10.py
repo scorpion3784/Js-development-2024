@@ -3423,3 +3423,587 @@
 ##############################################################
 
 
+
+         #####   перевернуть строку в Python   #####
+
+
+# Slicing
+
+# s="Python" # initial string
+# #stringlength=len(s) # calculate length of the list
+# s=s[::-1] # slicing 
+# print (s) # print the reversed string
+
+
+# Loop
+
+# s = "Python" # initial string
+# reversedString=[]
+# index = len(s) # calculate length of string and save in index
+# while index > 0: 
+#     reversedString += s[ index - 1 ] # save the value of str[index-1] in reverseString
+#     index = index - 1 # decrement index
+# print(reversedString) # reversed string
+
+
+# OR
+
+# s = 'Python' #initial string
+# reversed=''.join(reversed(s)) # .join() method merges all of the characters resulting from the reversed iteration into a new string
+# print(reversed) #print the reversed string
+
+                ####################################
+
+# Палиндром — это слово или текст, который читается одинаково как слева 
+# направо, так и справа налево. Создайте программу, которая проверяет, 
+# является ли слово палиндромом.
+
+# while True:
+#   s = input()
+#   if s == s[::-1]:
+#     print(s,  "Palindrome")
+#   else:
+#     print(s,  "Not palindrome") 
+
+# string = input()
+# ss= string[::-1] 
+# if string == ss:
+#     print("Palindrome")
+# else:
+#     print("Not palindrome")
+
+
+#s="Python" # initial string
+# #stringlength=len(s) # calculate length of the list
+#  # slicing 
+# print (s) # print the reversed string
+
+
+# x = input()
+# y = x[::-1]
+# while len(x) % 2 == 0:
+#     if x == y:
+#         print("Palindrome")
+#     else:
+#         print("Not palindrome")
+#     break
+
+####################################################################
+#####################################################################
+#######################################################################
+
+# limit = 25
+# numbers = []
+# while len(numbers) < 5:
+#     for i in range(limit):
+#         if i % 3 != 0:
+#             continue
+#         else:
+#             numbers.append(i)
+
+# print(len(numbers))
+
+
+######################################################################
+######################################################################
+   
+             ###   Гласные и согласные   ###
+   
+   ###   Формат вывода:
+
+# Распечатать строку vowel, если символ является гласным, и consonant 
+# если символ является согласным. Остановить печать информации 
+# на первом неалфавитном символе.
+
+# print("string".isalpha())
+# # True
+# print("str!!ing".isalpha())
+# # False
+
+
+
+# word = input()
+# vowels = 'aeiou'
+# for char in word:
+#     if not char.isalpha():
+#         break
+#     print('vowel' if char in vowels else 'consonant')
+
+# OR
+
+# n = input()
+# a = "a","e","i","o","u"
+# for i in n:
+#   if not i.isalpha():
+#     break
+#   elif i in a:
+#     print("vowel")
+#   else: 
+#     print("consonant")  
+
+# OR
+
+# n = input()
+# a = "a","e","i","o","u"
+# b = "b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"
+# for i in n:
+#   if i in a:
+#     print("vowel")
+#   elif i in b:
+#     print("consonant")
+#   else:
+#     #print(i.isalpha())
+#     break
+
+
+
+################################################################
+#################################################################
+################################################################
+# nums = [int(x) for x in iter(input, ".")]
+# print(sum(nums) / len(nums)) 
+
+
+# numbers = []
+# while True:
+#     user_input = input()
+#     if user_input == ".":
+#         break
+#     numbers.append(int(user_input))
+# print(sum(numbers) / len(numbers))
+
+
+               #####################################
+
+# Считывайте значения с плавающей точкой из входных данных, 
+# пока не встретите '.' (точку). Затем выведите минимальное из считанных 
+# значений.   
+# Используйте список — помните, что нужно создать пустой список и добавить
+#  в него значения.
+
+# numbers = []
+# while True:
+#   number = input()
+#   if number == ".":
+#       break
+#   numbers.append(float(number))
+# print(min(numbers))  
+
+# numbers = []
+# while True:
+#     i = input()
+#     if i == '.':
+#         print(min(numbers))
+#         break
+#     numbers.append(float(i))
+
+
+
+#OR
+
+# print(min(float(x) for x in iter(input, ".")))
+
+
+                 ###########################################
+
+############################################################################
+##############################################################################
+############################################################################
+###############################################################################
+
+
+
+
+
+
+
+# txt = "hello, my name is Peter, I am 26 years old"
+
+# x = txt.split(", ")
+
+# print(x)
+
+# txt = "welcome to the jungle"
+
+# x = txt.split()
+
+# print(x)
+
+
+# txt = "apple#banana#cherry#orange"
+
+# x = txt.split("#")
+
+# print(x)
+
+# txt = "apple#banana#cherry#orange"
+
+# # setting the maxsplit parameter to 1, will return a list with 2 elements!
+# x = txt.split("#", 1)
+
+# print(x)
+
+
+# words = input().split() 
+# print(words) # Вывод: ['яблоко', 'банан', 'апельсин']
+
+
+
+
+# a = (1, 5, 3, 9)
+# x = max(a)
+# print(x)
+
+  ###################################################################
+# number = []
+# while True:
+#   number = float(input())
+  
+#   maxnumber = min(number)
+
+#   if number == ".":
+#       break
+      
+#       print(maxnumber)
+#       number += 1
+
+        
+# students=int(input('Please enter the number of students in the class: '))
+
+# for i in range(1, students + 1):
+#         first_grade=(input("Enter student's first grade: "))
+#         second_grade=(input("Enter student's second grade: "))
+#         third_grade=(input("Enter student's third grade: "))
+
+# numbers = 3
+# print(hasattr(numbers,'__iter__'))
+
+######################################################################
+# numbers = [3, 56, 78, 65, 5, 3]
+
+# if hasattr(numbers, '__iter__'):
+#     print("This object is iterable")
+# else:
+#     print("This object is not iterable")
+
+# [output]
+# This object is iterable
+
+
+# numbers = 3
+# print(hasattr(numbers,'__iter__'))
+
+#######################################################################
+
+
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+# for row in matrix:
+#     for column in range(len(row)):
+#         row[column] += 1
+
+# print(matrix)
+
+
+# string= "3.141"
+
+# print(string)
+# print(type(string))
+
+# # syntax - float()
+# Float = float(string)  
+
+# print(Float)
+# print(type(Float))
+
+
+
+
+
+# string = '55.567'
+
+# Float = float(string)
+
+# print(type(Float))
+
+# print('Float Value =', Float)
+
+
+
+# int_ = int(Float)
+
+# print(type(int_))
+
+# print('int Value =', int_)
+
+
+# str_ = str(int_)
+
+# print(type(str_))
+
+# print('str Value =', str_)
+
+######################################################################
+##################################################################
+######################################################################
+
+# string_number = "55.5675751"
+# decimal_points = 2
+
+# #converting string to float
+# float_number = float(string_number)
+# #using .format method to print upto decimal point
+# formatted_float = "{:.{}f}".format(float_number, decimal_points)
+
+# print(formatted_float)
+
+
+#####################################################################
+######################################################################
+#########################################################################
+# Here a,b are the parameters
+# def fun(*args):
+#     # Concatenate all arguments
+#     result = "".join(args)
+#     print(result)
+
+# a = [3, 5, 9, 1, -5]
+# x = min(a)
+# print(x)
+
+ 
+# a = [1, 'apple', 3.14] 
+# res = ' '.join(map(str, a))
+# print(res)
+    
+# try:
+#     result = int("some_string")
+# except ValueError:
+#     print("The string cannot be converted to an integer.")
+#
+
+
+
+##########################################################################
+##########################################################################
+
+# Python: получить ключ словаря с максимальным значением (4 способа)
+
+
+# ages = {'matt': 30, 'katie': 29}
+# # Get max value in python dict
+# max_value = max(ages.value())
+# print(max_value)
+
+# # Get the key for a dict's max value
+# max_key = max(ages, key=ages.get)
+# print(max_key)
+
+###########################################################################
+#########################################################################
+##########################################################################
+
+                 ###   Нарезка   Slicing  ###
+
+# word = input()
+# forward =  word[::]
+# backward =  word[::-1]
+# if forward == backward:
+#     print("Yes")
+# else:
+#     print("No")
+
+
+# email = "someone@yougotmail.com"
+# print(email[:email.index("@")])
+
+# print(email[:-15])
+
+
+
+
+# numbers = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+#            21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 
+#            36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 
+#            51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 
+#            66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
+#            81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 
+#            96, 97, 98, 99, 100]
+#numbers = numbers[::]                     
+# for i in numbers[::]:
+#     if i % 5 == 0:
+#         print(i)   
+  
+# print(numbers[::5]) 
+
+# print(list(reversed(numbers[::-5])))
+
+# print([i for i in numbers if i % 5 == 0])
+
+# print([i for i in range(5, 101, 5)])  
+
+########################################################################
+
+#  my_list = [3, 9, 27, 81, 243, 729, 2187]
+
+# my_list[-1:]
+# my_list[:]
+# my_list[2:-1:-3]
+# my_list[2:0:-3]
+# my_list[7]
+
+# print(y_list[-1:])
+
+#############################################################################
+##############################################################################
+###############################################################################
+############################################################################
+
+
+
+
+  #############      Форматирование строки     ###############
+  #############      String formatting         #################
+
+  # оператор %, str.format() и форматированные строковые литералы (f-строки).
+
+# name = 'John'
+# age = 20
+# print('Hi, my name is ' + name + ', I am ' + str(age) + ' years old!') 
+
+
+# # Оператор %
+
+# name = 'John'
+# age = 20
+# print('Hi, my name is %s, I am %i years old!' % (name, age))  # an old-fashioned way of formatting
+# # prints 'Hi, my name is John, I am 20 years old!'
+
+# print('%.3f' % (11 / 3))  # 3.667
+# print('%.2f' % (11 / 3))  # 3.67
+# # Old-style rounding of decimals
+
+
+            #######      str.format()метод      ########
+
+
+# name = 'John'
+# age = 20
+# print('Hi, my name is {}, I am {} years old!'.format(name, age))  
+
+
+# print('{0} in the {1} by Frank Sinatra'.format('Strangers', 'Night'))
+# # prints 'Strangers in the Night by Frank Sinatra'
+
+# print('{1} in the {0} by Frank Sinatra'.format('Strangers', 'Night'))
+# # prints 'Night in the Strangers by Frank Sinatra'
+
+# print('{1} in the {0} by Frank Sinatra: {1}'.format('Strangers', 'Night'))
+# # prints 'Night in the Strangers by Frank Sinatra: Night'
+
+# print('{1} in the {0} by Frank Sinatra: {2}'.format('Strangers', 'Night'))
+# # IndexError
+
+
+# print('The {movie} movie at {theatre} was {adjective}!'.format(movie='Star Wars',
+#                                                         adjective='incredible',
+#                                                         theatre='BFI IMAX'))
+
+############################################################################
+# Right
+
+#print('The {0} was {adjective}!'.format('Lord of the Rings', adjective='incredible'))
+# The Lord of the Rings was incredible!
+
+# Mistake
+
+# print('The {0} was {adjective}!'.format(adjective='incredible', 'Lord of the Rings'))
+# SyntaxError: positional argument follows keyword argument
+
+
+               ####################################################
+               
+   #####        Formatted string literals     f-strings    #################
+
+
+# name = 'John'
+# age = 20
+# print(f'Hi, my name is {name}, I am {age} years old!')
+
+# decimal_number = 291.68
+# print(f'Decimal number as is: {decimal_number}')
+# # Decimal number as is: 291.68
+
+# print(f'Decimal number rounded to 1 decimal place: {decimal_number:.1f}')  # a clean way of rounding decimals
+# # Decimal number rounded to 1 decimal place: 291.7
+
+          ###################################################### 
+
+# Напишите код, который округляет число пи до 5 знаков после запятой 
+# и выводит его на печать.  
+
+
+# pi = 3.141592653589793
+# print(f"{pi:.5f}")
+# print(round(pi, 5))
+
+################################################################################
+
+# Предположим, вы хотите отправлять разные URL для каждого пользователя в 
+# зависимости от его имени и профессии. База будет выглядеть примерно так:
+
+
+# nickname = input()
+# profession = input()
+# print(f"http://example.com/{nickname}/desirable/{profession}/profile")
+
+# print(f"http://example.com/{input()}/desirable/{input()}/profile")
+
+
+   #####################################################################
+
+# name = input()
+# num = int(input())
+# num = num * "!"
+# print(f"Hello, {name}{num}")
+
+
+
+# name = input("Please enter your name: ")
+# age = input("Please enter your age: ")
+# print("Hello, {}! You are {} years old.".format(name, age))
+
+
+# print('{0} and {2} met yesterday in {1}.'.format('Angelina Jolie', 'Paris', 'Leonardo DiCaprio'))
+
+############################################################################
+
+
+# Напишите программу, которая вычисляет длину слова из входных данных и выводит 
+# ее вместе со словом в формате
+
+
+# word = input()
+# len_ = len(word)
+# print(f"{word} has {len_} letters")
+
+# word = input()
+# print(f"{word} has {len(word)} letters")
+
+
+##########################################################################
+##########################################################################
+
+                ###    WORK WITH STRINGS ###
+
+# first_name = input()
+# last_name = input()
+
+# print(f"Hello, {first_name} {last_name}! Welcome.")
+
+# print(f"Hello, {input()} {input()}! Welcome.")
+
+# print("Hello, {} {}! Welcome.".format(input(), input()))
+
+
+###########################################################################
